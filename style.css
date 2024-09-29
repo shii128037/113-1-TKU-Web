@@ -13,58 +13,43 @@ body {
     /* 把html跟body的大小撐開 */
     width: 100vw;
     height: 100vh;
+    font: 16px;
 }
 
-/* id選擇器, 選擇所有 id="container" 的東西 */
-#container {
-    /* 把container的大小撐開 */
-    width: 100%;
+#app {
     height: 100%;
-    /* 撐開內邊距 */
-    padding: 1%;
-    /* flex布局 */
+    width: 100%;
     display: flex;
-    /* 垂直排列 */
     flex-direction: column;
-    /* 水平置中 */
     align-items: center;
-    /* 垂直置中 */
     justify-content: center;
+    background-color: #c1bae47e; /* 新增的背景顏色 */
 }
 
-/* class選擇器, 選擇所有 class="wrapper" 的東西 */
-.wrapper {
-    /* flex布局 */
+#head {
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+img {
+    box-shadow: -4px 4px 10px 1px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    border-radius: .5rem; /* 圓角邊框 */
+}
+
+.container {
     display: flex;
-    /* 垂直排列 */
-    flex-direction: column;
-    /* 子元素間距2.5rem */
-    gap: 2.5rem;
+    justify-content: space-between; /* 左右兩邊分開 */
+    align-items: center; /* 垂直置中對齊 */
+    padding: 10px; /* 可選的內邊距 */
+    background-color: #f0f0f0; /* 可選的背景顏色 */
 }
 
-/* 空白的意思是選擇子內容 */
-/* id選擇器, 選擇所有 id="wrapper"的東西裡面 class="btn" 的東西*/
-.wrapper .btn {
-    /* 指定寬度 */
-    width: 50rem;
-    /* 撐開內邊距 */
-    padding: 3%;
-    /* 陰影 */
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-    /* 外框 */
-    border: 1px solid #51515130;
-    /* 變形, 幅度為 .3rem (圓角矩形) */
-    border-radius: .3rem;
-    /* 過度動畫長度指定半秒鐘 */
-    transition: all .5s;
+.left {
+    background-color: lightblue; /* 左邊的背景顏色 */
+    padding: 10px;
 }
 
-/* 冒號的意思是選擇虛擬類別 */
-/* id選擇器, 選擇所有 id="wrapper"的東西裡面 class="btn" 的東西*/
-/* 虛擬類別選擇器, 這裡選擇這東西被滑鼠懸停時的狀態 */
-.wrapper .btn:hover {
-    /* 外框 */
-    border: 1px solid #51515150;
-    /* 陰影 */
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+.right {
+    background-color: lightgreen; /* 右邊的背景顏色 */
+    padding: 10px;
 }

@@ -1,51 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鍾珺如的自我介紹</title>
+
+    <!-- 引入外部樣式 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- 引入bootstrap樣式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
 
 <body>
+    <div id="app">
+        <div id="head">
+            <h1>歡迎來到鍾珺如的自我介紹</h1>
+            <p>---------------------------------------------------------------</p>
+        </div>
+        <h2>鍾珺如</h2>
+        <h3>資管三C</h3>
 
-    <h1>歡迎來到鍾珺如的自我介紹</h1>
-    <h2>鍾珺如</h2>
-    <h3>資管三C</h3>
-    <p>MBTI:INFJ</p>
-    <a href="https://www.16personalities.com/tw/infj-%E6%80%A7%E6%A0%BC">前往介紹INFJ的網站</a>
-    <img src="infj.png" alt="INFJ" height="200">
-    <ul>
-        <p>喜歡的運動</p>
-        <li>游泳</li>
-        <li>羽球</li>
-    </ul>
+        <p>MBTI:INFJ</p>
+        <a href="https://www.16personalities.com/tw/infj-%E6%80%A7%E6%A0%BC">前往介紹INFJ的網站</a>
+        <div>
+            <img src="infj.png" alt="INFJ" height="200">
+        </div>
 
-    <ol>
-        <p>愛吃的食物</p>
-        <li>豆花</li>
-        <li>泰式打拋豬飯</li>
-    </ol>
-    <div>
-        <p>愛打遊戲</p>
+        <p></p>
+        
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <p>喜歡的運動</p>
+                    <li>游泳</li>
+                    <li>羽球</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ol>
+                    <p>愛吃的食物</p>
+                    <li>豆花</li>
+                    <li>泰式打拋豬飯</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div>
+            <p>愛打遊戲</p>
+        </div>
+        <span>喜歡泡茶</span>
+        <form action="/submit" method="post">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name">
+            <input type="submit" value="提交">
+        </form>
+        <table>
+            <tr>
+                <th>名稱</th>
+                <th>年齡</th>
+            </tr>
+            <tr>
+                <td>珺如</td>
+                <td>20</td>
+            </tr>
+        </table>
+        <strong>南部人</strong>
+        <em>但個性相對於內向</em>
+        
+
     </div>
-    <span>喜歡泡茶</span>
-    <form action="/submit" method="post">
-        <label for="name">姓名:</label>
-        <input type="text" id="name" name="name">
-        <input type="submit" value="提交">
-    </form>
-    <table>
-        <tr>
-            <th>名稱</th>
-            <th>年齡</th>
-        </tr>
-        <tr>
-            <td>珺如</td>
-            <td>20</td>
-        </tr>
-    </table>
-    <strong>南部人</strong>
-    <em>但個性相對於內向</em>
 </body>
 
 </html>
